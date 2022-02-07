@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <div class="main">
+    <div>
+      <img src="images/logo.svg" alt="logo" class="logo">
+    </div>
+    <div class="main_card">
+      <div class="input_section">
+        <div class="input">
+          <p class="input_title">Bill</p>
+          <label>
+            <img src="images/icon-dollar.svg" alt="doller">
+            <input type="number" name="number" class="bill" id="bill" placeholder="0" min="0">
+          </label>
+        </div>
+        <div class="input">
+          <p class="input_title">Select Tip %</p>
+          <div class="tip_buttons">
+            <input class="tip_button" id="tip_button1" value="5%" readonly onclick="tipbtn(5)">
+            <input class="tip_button" id="tip_button2" value="10%" readonly onclick="tipbtn(10)">
+            <input class="tip_button" id="tip_button3" value="15%" readonly onclick="tipbtn(15)">
+            <input class="tip_button" id="tip_button4" value="25%" readonly onclick="tipbtn(25)">
+            <input class="tip_button" id="tip_button5" value="50%" readonly onclick="tipbtn(50)">
+            <input type="number" class="tip_button" placeholder="Custom" id="custom" min="0">
+          </div>
+        </div>
+        <div class="input">
+          <div class="title_error">
+            <p class="input_title">Number of People</p>
+            <p class="error" id="error">Can't be zero</p>
+          </div>
+          <label id="lable_people">
+            <img src="images/icon-person.svg" alt="doller">
+            <input type="number" name="number" class="bill" id="people" placeholder="0" min="1">
+          </label>
+        </div>
+      </div>
+      <div class="output_section">
+        <div class="output_main">
+          <div class="output_title">
+            <div class="first">
+              <span class="main_title">Tip Amount</span>
+              <span class="below_title">/ person</span>
+            </div>
+            <div class="first">
+              <span class="main_title">Total</span>
+              <span class="below_title">/ person</span>
+            </div>
+          </div>
+          <div class="output_output">
+            <span class="output_money" id="tip">$0.00</span>
+            <span class="output_money" id="total">$0.00</span>
+          </div>
+        </div>
+        <div class="reset_btn" id="reset_btn">RESET</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="">Anonymous School</a>.
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>
